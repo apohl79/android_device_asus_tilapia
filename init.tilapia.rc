@@ -213,6 +213,9 @@ on boot
     chown system system /sys/devices/system/cpu/cpufreq/interactive/sustain_load
     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/sustain_load
 
+# Voltage control
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/UV_mV_table
+
 # Default Read Ahead value for sdcards
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
     write /sys/block/mmcblk1/queue/read_ahead_kb 2048
